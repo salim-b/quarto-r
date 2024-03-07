@@ -4,10 +4,10 @@
     <loc>https://quarto-dev.github.io/quarto-r/404.html</loc>
   </url>
   <url>
-    <loc>https://quarto-dev.github.io/quarto-r/articles/index.html</loc>
+    <loc>https://quarto-dev.github.io/quarto-r/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://quarto-dev.github.io/quarto-r/articles/publishing.html</loc>
+    <loc>https://quarto-dev.github.io/quarto-r/CONTRIBUTING.html</loc>
   </url>
   <url>
     <loc>https://quarto-dev.github.io/quarto-r/authors.html</loc>
@@ -16,7 +16,25 @@
     <loc>https://quarto-dev.github.io/quarto-r/index.html</loc>
   </url>
   <url>
+    <loc>https://quarto-dev.github.io/quarto-r/news/index.html</loc>
+  </url>
+  <url>
     <loc>https://quarto-dev.github.io/quarto-r/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://quarto-dev.github.io/quarto-r/reference/is_using_quarto.html</loc>
+  </url>
+  <url>
+    <loc>https://quarto-dev.github.io/quarto-r/reference/quarto-package.html</loc>
+  </url>
+  <url>
+    <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_add_extension.html</loc>
+  </url>
+  <url>
+    <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_binary_sitrep.html</loc>
+  </url>
+  <url>
+    <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_create_project.html</loc>
   </url>
   <url>
     <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_inspect.html</loc>
@@ -35,6 +53,9 @@
   </url>
   <url>
     <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_serve.html</loc>
+  </url>
+  <url>
+    <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_use_template.html</loc>
   </url>
   <url>
     <loc>https://quarto-dev.github.io/quarto-r/reference/quarto_version.html</loc>
