@@ -28,11 +28,17 @@ computations are performed before rendering."><meta property="og:image" content=
 <li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
+<li class="nav-item">
+  <a class="nav-link" href="../news/index.html">Changelog</a>
+</li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
       <ul class="navbar-nav"><li class="nav-item">
-  <a class="nav-link" href="../news/index.html">Changelog</a>
+  <a class="external-link nav-link" href="https://github.com/quarto-dev/quarto-r/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
 </li>
       </ul></div>
 
@@ -168,19 +174,20 @@ a character vector of profile names or <code>NULL</code> to use the default prof
 
 
 <dt>quarto_args</dt>
-<dd><p>Character vector of other <code>quarto</code> CLI flag pass to the
-command. This is mainly for advanced usage, e.g it can be useful for new
-options added to quarto CLI and not yet supported as function argument.</p></dd>
+<dd><p>Character vector of other <code>quarto</code> CLI arguments to append
+to the Quarto command executed by this function. This is mainly intended for
+advanced usage and useful for CLI arguments which are not yet mirrored in a
+dedicated parameter of this <span style="R">R</span> function.</p></dd>
 
 
 <dt>pandoc_args</dt>
-<dd><p>Additional command line options to pass to pandoc.</p></dd>
+<dd><p>Additional command line arguments to pass on to Pandoc.</p></dd>
 
 
 <dt>as_job</dt>
 <dd><p>Render as an RStudio background job. Default is "auto",
 which will render individual documents normally and projects as
-background jobs. Use the <code>quarto.render_as_job</code> R option to control
+background jobs. Use the <code>quarto.render_as_job</code> <span style="R">R</span> option to control
 the default globally.</p></dd>
 
 </dl></div>
@@ -199,7 +206,7 @@ the default globally.</p></dd>
 <span class="r-in"><span><span class="fu">quarto_render</span><span class="op">(</span><span class="st">"notebook.md"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Override metadata</span></span></span>
-<span class="r-in"><span><span class="fu">quarto_render</span><span class="op">(</span><span class="st">"notebook.Rmd"</span>, override <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>lang <span class="op">=</span> <span class="st">"fr"</span>, echo <span class="op">=</span> <span class="st">"false"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">quarto_render</span><span class="op">(</span><span class="st">"notebook.Rmd"</span>, metadata <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>lang <span class="op">=</span> <span class="st">"fr"</span>, execute <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>echo <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span></span></span>
 </code></pre></div>
     </div>
