@@ -31,7 +31,7 @@ quarto_render(
 \item{input}{The input file or project directory to be rendered (defaults
 to rendering the project in the current working directory).}
 
-\item{output_format}{Target output format (defaults to "html"). The option
+\item{output_format}{Target output format (defaults to \code{"html"}). The option
 \code{"all"} will render all formats defined within the file or project.}
 
 \item{output_file}{The name of the output file. If using \code{NULL}, the output
@@ -84,11 +84,11 @@ a character vector of profile names or \code{NULL} to use the default profile.}
 \item{quarto_args}{Character vector of other \code{quarto} CLI arguments to append
 to the Quarto command executed by this function. This is mainly intended for
 advanced usage and useful for CLI arguments which are not yet mirrored in a
-dedicated parameter of this \R function.}
+dedicated parameter of this \R function. See \verb{quarto render --help} for options.}
 
 \item{pandoc_args}{Additional command line arguments to pass on to Pandoc.}
 
-\item{as_job}{Render as an RStudio background job. Default is "auto",
+\item{as_job}{Render as an RStudio background job. Default is \code{"auto"},
 which will render individual documents normally and projects as
 background jobs. Use the \code{quarto.render_as_job} \R option to control
 the default globally.}
